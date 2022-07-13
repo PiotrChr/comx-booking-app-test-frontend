@@ -18,7 +18,7 @@ import CIcon from '@coreui/icons-react'
 // routes config
 // import routes from '../routes'
 
-const TheHeader = (props) => {
+const Header = (props) => {
 
   return (
     <CHeader>
@@ -47,14 +47,14 @@ const TheHeader = (props) => {
   )
 }
 
-TheHeader.propTypes = {
+Header.propTypes = {
     user: PropTypes.object
 }
 
-TheHeader.defaultProps = {
+Header.defaultProps = {
     user: {
         username: 'Username'
     }
 }
 
-export default TheHeader
+export default Header

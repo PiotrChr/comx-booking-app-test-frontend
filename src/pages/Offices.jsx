@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { withRouter } from '../utils'
 import OfficeRepository from '../repository/officeRepository'
 import { CCard, CCardBody, CTable, CTableRow, CTableHead, CTableBody, CTableHeaderCell, CButton } from '@coreui/react'
@@ -22,6 +22,7 @@ export default withRouter(() => {
     }, [])
 
     return (
+        <div>
         <CCard>
             <CCardBody>
                 <CTable>
@@ -46,5 +47,6 @@ export default withRouter(() => {
                 </CTable>
             </CCardBody>
         </CCard>
+        </div>
     )
 })
