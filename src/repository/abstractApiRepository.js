@@ -43,7 +43,7 @@ export class AbstractApiRepository {
     const url = `${this.apiBaseUrl}${path}${query}`;
 
     try {
-      const response = await axios.put(url, data, { headers });
+      await axios.put(url, data, { headers });
     } catch (error) {
       this.handleError(error);
     }
