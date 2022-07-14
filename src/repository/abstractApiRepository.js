@@ -3,7 +3,7 @@ import config from '../config';
 import { stringifyParams } from '../utils';
 
 export class AbstractApiRepository {
-  apiBaseUrl = config.apiBaseUrl
+  apiBaseUrl = config.apiBaseUrl;
 
   getHeaders() {
     return {};

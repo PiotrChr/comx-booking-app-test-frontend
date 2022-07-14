@@ -1,9 +1,9 @@
 import { AbstractApiRepository } from './abstractApiRepository';
 
 export default class OfficeRepository extends AbstractApiRepository {
-    apiUrl = 'office'
+  apiUrl = 'office';
 
-    async fetchAll() {
-        return await this.fetchJson(this.apiUrl)
-    }
+  async fetchAll() {
+    return await this.fetchJson(this.apiUrl);
+  }
 }

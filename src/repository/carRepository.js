@@ -1,9 +1,9 @@
 import { AbstractApiRepository } from './abstractApiRepository';
 
 export default class CarRepository extends AbstractApiRepository {
-    apiUrl = 'car'
+  apiUrl = 'car';
 
-    async fetchAll() {
-        return await this.fetchJson(this.apiUrl)
-    }
+  async fetchAll() {
+    return await this.fetchJson(this.apiUrl);
+  }
 }
